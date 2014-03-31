@@ -1,4 +1,4 @@
 [submodule "emperor"]
 	path = emperor
-	url = git@github.com:ElDeveloper/emperor.git
+	url = git://github.com/ElDeveloper/emperor.git
 	branch = micromotion
