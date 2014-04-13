@@ -101,11 +101,11 @@
           <div class="navbar-inner">
             <div class="container">
               <ul class="nav">
-                <li class="active"><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="description_index.html">Description</a></li>
                 <li><a href="tutorial_index.html">Tutorial</a></li>
                 <li><a href="installation_index.html">Installation</a></li>
-                <li><a href="leap_motion.html">Leap Motion</a></li>
+                <li class="active"><a href="leap_motion.html">Leap Motion</a></li>
                 <li><a href="https://github.com/biocore/emperor/issues">Support</a></li>
               </ul>
             </div>
@@ -115,54 +115,72 @@
 
       <!-- Jumbotron -->
       <div class="jumbotron">
-<!--         <img src="img/emperor_heading.png" alt="Emperor">
-        <br><br><br><br> -->
-        <p class="lead" align="justify">Emperor is an interactive next generation tool for the analysis, visualization and understanding of high throughput microbial ecology datasets.
-        </p>
-        <p class="lead" align="justify">
-          Due to it’s tailor-made graphical user interface, delving into a new dataset to elucidate the patterns hidden in the data, has never been easier. Emperor brings a rich set of customizations and modifications that can be integrated into any <a href="http://qiime.org">QIIME</a> compliant dataset; with lightweight data files and hardware accelerated graphics, constitutes itself as the state of the art for analyzing N-dimensional data using principal coordinates analysis.<br>
-        </p>
-        <p class="lead" align="justify">
-          If you use Emperor for any published research, please include the following citation:<br>
-          <blockquote>
-            <div align="left">
-              <b>EMPeror: a tool for visualizing high-throughput microbial community data</b><br>
-              Vazquez-Baeza Y, Pirrung M, Gonzalez A, Knight R.<br>
-              Gigascience. 2013 Nov 26;2(1):16.<br>
-            </div>
-          </blockquote>
-        </p>
-        <p class="lead" align="justify">
-        You can find the <a href="http://www.gigasciencejournal.com/content/2/1/16/">Emperor paper here</a>.
-        </p>
-        <img src="img/sample_1.png" alt="Emperor">
-        <br>
-        <strong><p class="text-error lead" align="justify">We've encountered that for large studies (more than five thousand samples) a 64-bit browser is needed. Even though we recommend Google Chrome, there are no official 64-bit binaries for OS X or Windows (Linux builds are 64-bit by default, see <a href="https://code.google.com/p/chromium/issues/detail?id=18323">issue #18323</a> and <a href="https://code.google.com/p/chromium/issues/detail?id=312958">issue #312958</a>), if you encounter this problem you should be able to open the visualization with Safari or Firefox.</p></strong>
 
       </div>
+        <h2>Leap Motion Controller</h2>
+          <p class="lead" align="justify">
+          The <a href="https://www.leapmotion.com/product">Leap Motion</a> controller is an advanced sensor that provides an alternative to the usage of a mouse and keyboard to interact with computer programs. Emperor takes advantage of this modern interface and integrates a set of gestures that will allow the basic interaction of a user with a dataset presented on screen.<br>
+          </p>
+          <p align="center"><img src="img/leap_motion_logo.png" height="80%" width="80%" alt="Leap Motion Logo"></p>
+          <p class="lead" align="justify">
+          While not all of Emperor's features are supported using this controller, the following features are available via <i>Leap Motion gestures</i>:<br>
+          <ul>
+              <li>Rotating</li>
+              <li>Zooming</li>
+              <li>Switching between color schemes</li>
+              <li>Re-entering the camera</li>
+              <li>Adding a cursor to the plot</li>
+              <li>Switching between color categories</li>
+          </ul>
+          </p>
+          <hr>
+          <h2>Demo</h2>
+          <p align="center">
+          <iframe width="853" height="480" src="http://www.youtube.com/embed/s1-y7zvgeLA" frameborder="0" allowfullscreen></iframe>
+          </p>
+          <hr>
+      <!-- START THE FEATURETTES, taken from http://getbootstrap.com/examples/carousel/ -->
 
-      <hr>
-
-      <!-- Example row of columns -->
-      <div class="row-fluid">
-        <div class="span4">
-          <h2>Biplots</h2>
-          <p>To visualize the taxa  driving the differences in a PCoA plot we can use biplots.</p>
-          <p><a class="btn" href="http://emperor.colorado.edu/master/make_emperor/biplot/index.html">Biplots Example &raquo;</a></p>
-        </div>
-        <div class="span4">
-          <h2>Jackknifing</h2>
-          <p>A jackknifed PCoA plot (with confidence intervals for each sample) helps to assure that our rarefaction selection is not the cause of the clustering patterns we are looking in beta diversity.</p>
-          <p><a class="btn" href="http://emperor.colorado.edu/master/make_emperor/jackknifed_pcoa/index.html">Jackknifing Example &raquo;</a></p>
-       </div>
-        <div class="span4">
-          <h2>Gradients</h2>
-          <p>Integrating gradient information to our coloring scheme, such as pH, time, or geographical location can be done in multiple ways with Emperor. One of them, is to add an explicit axis to the plot, from the mapping file.</p>
-          <p><a class="btn" href="http://emperor.colorado.edu/master/make_emperor/vectors/index.html">Gradient Example &raquo;</a></p>
-        </div>
+      <div class="row">
+          <div class="span7">
+              <h2 class="heading">The best pointing device</h2>
+              <p class="lead">Our fingers are the best and most accurate pointing devices that mankind has ever seen, so if you point at the screen with a single finger, a cursor will be displayed on top of the plot, any of your fingers can function as a pointer.</p>
+          </div>
+          <div class="span5">
+              <img class="media-object" src="img/fingers.png" alt="Fingers">
+          </div>
       </div>
-
       <hr>
+
+      <div class="row">
+          <div class="span5">
+              <p align="center">
+                <img class="media-object" src="img/keytap.png" alt="KeyTap" height="80%" width="80%">
+                <img class="media-object" src="img/swipe.png" alt="Swipe" height="60%" width="60%">
+              </p>
+          </div>
+          <div class="span7">
+              <h2 class="heading">Showing your data's true colors</h2>
+              <p class="lead">
+              Switching between different coloring categories in your mapping file and coloring schemes (continuous or discrete) are now features at your finger tips. Using a <b>swipe gesture</b> (in any direction i. e. top-down, left-right, etc.) you can change the current category used to color the samples and if you use the <b>tap gesture</b>, you can toggle between continuous and discrete coloring schemes.
+              <br>
+              <br>
+              Coloring samples given a metadata category is usually the easiest way to verify whether or not there are clusters in the data you are visualizing.
+              </p>
+          </div>
+      </div>
+      <hr>
+      
+      <div class="row">
+          <div class="span7">
+              <h2 class="heading">Recenter the camera</h2>
+              <p class="lead">If after rotating, zooming in and zooming out you just want to go back to the initial position at which the camera was positioned, just <i>tap</i> the screen and Emperor will reset the position of the camera.</p>
+          </div>
+          <div class="span5">
+              <img class="media-object" src="img/tap.png" alt="Tapping">
+          </div>
+      </div>
+      <!-- /END THE FEATURETTES -->
 
       <div class="footer">
         <a href="https://github.com/biocore/emperor/network/members">
